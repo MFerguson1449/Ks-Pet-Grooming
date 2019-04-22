@@ -15990,11 +15990,16 @@ function (_Highway$Transition) {
       }).fromTo(to, 0.5, {
         height: '2vh'
       }, {
-        height: '90vh',
-        top: '10%',
+        height: '73vh',
+        top: '17%',
         onComplete: function onComplete() {
+          from.remove();
           done();
         }
+      }).fromTo(to.children[0], 2, {
+        opacity: 0
+      }, {
+        opacity: 1
       });
     }
   }, {
@@ -16020,7 +16025,7 @@ var _transition = _interopRequireDefault(require("./transition"));
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-var H = new _highway.default.core({
+var H = new _highway.default.Core({
   transitions: {
     default: _transition.default
   }
@@ -16053,7 +16058,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "25065" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "25940" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

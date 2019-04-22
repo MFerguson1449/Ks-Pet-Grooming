@@ -8,7 +8,7 @@
 }
 
 .nav-list {
-    background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+    background: $
     height: 10vh;
     display: flex;
     margin-top: 3%;
@@ -26,12 +26,14 @@
     font-size: 18px;
 }
 
-.home {
+.home,
+.about {
     height: 73vh;
     position: absolute;
     width: 100%;
 }
 
+.about-content,
 .home-content {
     height: 100%;
     display: flex;
@@ -40,6 +42,11 @@
     img { 
         height: 30%; 
     }
+    h1 {
+        font-family: sans-serif;
+        font-weight: 900;
+        font-size: 60px;
+    }
     p {
         font-size: 1.8em;
         font-weight: 600;
@@ -47,7 +54,13 @@
         width: 50%;
     }
 }
-.home {
+
+.about {
     margin-top: 50px;
     background-image: linear-gradient(to top, #a8edea 0%, #fed6e3 100%);
+}
+
+.home {
+    margin-top: 50px;
+    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
 }
