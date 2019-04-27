@@ -1,6 +1,12 @@
 
 @import '_variables';
 
+@mixin box-shadow( $horiz : -.5em , $vert : .4em , $blur : 12px , $spread : 4px , $color : #242424d2 ){
+    -webkit-box-shadow: $horiz $vert $blur $spread $color;
+    -moz-box-shadow: $horiz $vert $blur $spread $color;
+    box-shadow: $horiz $vert $blur $spread $color;
+}
+
 *{
     margin: 0px;
     padding: 0px;
@@ -8,55 +14,64 @@
 }
 
 body {
-    background:black;
+    background: #f1f1f1;
 }
 
 .nav-list {
-    background: #f3f3f3;
     height: 10vh;
     display: flex;
-    margin-top: 3%;
-    margin-bottom: 2%;
+    margin-top: 2%;
+    margin-bottom: 3%;
     justify-content: space-evenly;
     align-items: center;
     margin-left: auto;
     li {
         position: relative;
-        right: 5%;
+        top: 65%;
+        right: 15%;
+        margin: -3%;
         list-style-type: none;
+    }
+    img {
+        width: 25%;
+        position: relative;
+        right: 7%;
     }
 }
 
 .nav-links {
-    font-family: 'Fredoka One', cursive;
+    font-family: 'Shadows Into Light', cursive;
     text-decoration: none;
-    color: $brandPurple;
-    font-size: 30px;
-    -webkit-text-stroke: 1.5px black;
+    color: black;
+    font-weight: 900;
+    font-size: 45px;
+    -webkit-text-stroke: 0.02px $brandPurple;
 }
 
 .home,
 .about {
-    height: 73vh;
+    height: 68vh;
     position: absolute;
     width: 100%;
 }
 
 .home-presentation {
-    background: black;
+}
+
+.about-presentation {
 }
 
 .about-content,
 .home-content {
     position: relative;
     width: 100%;
-    height: 100%;
+    height: 83%;
     display: flex;
     align-items: center;
     h1 {
         font-family: 'Luckiest Guy', cursive;
         font-weight: 900;
-        font-size: 7em;
+        font-size: 8em;
         color: $brandPurple;
         -webkit-text-stroke: 1px black;
         position: absolute;
@@ -72,10 +87,10 @@ body {
         margin: -5%;
         align-items: center;
         position: absolute;
-        top: 3.5%;
+        top: 0%;
         margin: auto;
         width: 100%;
-        z-index: 0;
+        border-bottom: groove #111;
         img { 
             width: 41vh;
             height: auto;
@@ -86,14 +101,24 @@ body {
 .about {
     margin-top: 50px;
     background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
-    z-index: -99999;
 }
-
+ 
 .home {
     margin-top: 50px;
+    border-top: #111 20px groove;
     background: $brandPurple;
 }
 
+#copyright {
+    position: absolute;
+    font-size: 1.5vh;
+    right: 42%;
+    bottom: 1%;
+    font-family: 'Shadows Into Light', cursive;
+    color: black;
+    font-weight: 600;
+}
+
 a:hover {
-    color: #BD4865
+    color: $brandLight;
 }
