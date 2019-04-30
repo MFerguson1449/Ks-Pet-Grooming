@@ -61,7 +61,6 @@ body {
 .about-presentation {
 }
 
-.about-content,
 .home-content {
     position: relative;
     width: 100%;
@@ -98,14 +97,37 @@ body {
     }
 }
 
+.about-content {
+    font-family: 'Lato', sans-serif;
+    font-size: 1.5em;
+    font-weight: 900;
+    display: flex;
+    #bio {
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        margin: 5% 10% 10% 10%;
+        justify-content: space-evenly;
+    }
+    p {
+        width: 70%;
+        line-height: 1.4em;
+    }
+    img {
+        width: 40vh;
+        border: ridge #222 10px;
+    }
+}
+
 .about {
     margin-top: 50px;
-    background-image: linear-gradient(to right, #b8cbb8 0%, #b8cbb8 0%, #b465da 0%, #cf6cc9 33%, #ee609c 66%, #ee609c 100%);
+    border-top: #111 20px solid;
+    background: $brandPurple;
 }
  
 .home {
     margin-top: 50px;
-    border-top: #111 20px groove;
+    border-top: #111 20px solid;
     background: $brandPurple;
 }
 
