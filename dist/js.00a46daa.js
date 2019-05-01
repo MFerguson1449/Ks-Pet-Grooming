@@ -15990,8 +15990,8 @@ function (_Highway$Transition) {
       }).fromTo(to, 0.5, {
         height: '2vh'
       }, {
-        height: '73vh',
-        top: '17%',
+        height: '60vh',
+        top: '14.5%',
         onComplete: function onComplete() {
           from.remove();
           done();
@@ -16058,7 +16058,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "5116" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "23457" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
