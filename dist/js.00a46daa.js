@@ -15982,13 +15982,13 @@ function (_Highway$Transition) {
           to = _ref.to,
           done = _ref.done;
       var tl = new _gsap.TimelineLite();
-      tl.fromTo(to, 0.5, {
+      tl.fromTo(to, 0.6, {
         left: '-100%',
         top: '50%'
       }, {
         left: '0%;'
-      }).fromTo(to, 0.5, {
-        height: '0.1vh'
+      }).fromTo(to, 0.6, {
+        height: '0.2vh'
       }, {
         height: '60vh',
         top: '14.5%',
@@ -16058,7 +16058,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "1948" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "2911" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

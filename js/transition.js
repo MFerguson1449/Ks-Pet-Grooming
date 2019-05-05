@@ -4,8 +4,8 @@ import { TimelineLite } from 'gsap';
 class Fade extends Highway.Transition{
     in({from, to, done}){
     const tl = new TimelineLite();
-    tl.fromTo(to, 0.5, {left: '-100%', top: '50%'}, {left: '0%;'})
-    .fromTo(to, 0.5, {height: '0.1vh'}, {height: '60vh', top: '14.5%',
+    tl.fromTo(to, 0.6, {left: '-100%', top: '50%'}, {left: '0%;'})
+    .fromTo(to, 0.6, {height: '0.2vh'}, {height: '60vh', top: '14.5%',
           onComplete: function(){
             from.remove();
             done();
