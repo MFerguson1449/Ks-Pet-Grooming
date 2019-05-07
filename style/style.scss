@@ -36,6 +36,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    color: $black;
 }
 
 body {
@@ -48,16 +49,16 @@ main {
 }
 
 
-// Header
+// Header //
 #header {
     position: relative;
-    height: 23vh;
+    height: 21vh;
     background: $backdrop1;
     #name {
-        height: 110%;
+        height: 170%;
         position: absolute;
-        left: 8%;
-        bottom: -20%;
+        left: 12%;
+        transform: translateY(-10%);
     }
     #header-info{
         position: absolute;
@@ -65,27 +66,32 @@ main {
         line-height: 2.5em;
         right: 1%;
         top: 2%;
-        font-family: $font1;
-        h3 {
-            font-family: $font2;
+        font-family: $font2;
+        #serves {
             font-size: 1.25em;
-            font-weight: 300;
-            color: black;
-            -webkit-text-stroke: 1px black;
+            font-weight: 900;
+            color: #666;
+            text-decoration: underline;
+        }
+        #email {
+            font-size: 1.35em;
+            font-weight: 900;
+            transform: translate(-1.5%, -30%);
         }
         h2 {
-            font-size: 3.1em;
-            color: $brandPurple
+            font-size: 2.0em;
+            color: $black;
+            transform: translate(-4%, -55%)
         }
         #phone {
-            width: 5%;
+            width: 4%;
             position: absolute;
-            left: 58%;
+            top: 25%;
+            left: 61%;
         }
         #facebook {
             width: 30%;
-            position: relative;
-            right: 0%;
+            transform: translate(-8%, -25%)
         }
     }
 }
@@ -108,12 +114,12 @@ main {
 .nav-links {
     font-family: $font1;
     text-decoration: none;
-    color: black;
+    color: $black;
     font-weight: 900;
     font-size: 46px;
 }
 
-// Body
+// Body //
 .home,
 .about {
     height:60vh;
@@ -127,24 +133,25 @@ main {
 
 .home-content {
     position: relative;
-    height: 95%;
+    height: 100%;
     @include body-margin;
     
     #homebody {
-        position: absolute;
         display: flex;
         width: 100%;
-        flex-direction: row;
         justify-content: space-evenly;
-        img { 
-            height: auto;
+
+        border: $testBorder2;
+        img {
+            height: 24vw;
+            padding-bottom: 10
         }
         p {
             font-family: $font2;
-            font-size: 1.6em;
+            font-size: 2.4vmin;
             font-weight: 900;
             line-height: 1.3em;
-            width: 50%
+            width: 31%
         }
     }
 }
@@ -205,23 +212,22 @@ main {
 
 
 // Footer
-#footer {
-    //border-top: 5px solid black;
-    //height: 3vh;
-    position: relative;
-}
-
-
 #copyright {
     position: absolute;
     font-size: 1.5vh;
     right: 42%;
     bottom: 1%;
     font-family: $font1;
-    color: black;
+    color: $black;
     font-weight: 600;
 }
 
 a:hover {
     color: $brandPurple;
+}
+
+a:active {
+  background-color: #3e8e41;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
 }
