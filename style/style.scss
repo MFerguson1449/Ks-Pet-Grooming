@@ -55,7 +55,7 @@ main {
     height: 21vh;
     background: $backdrop1;
     #name {
-        height: 170%;
+        height: 120%;
         position: absolute;
         left: 12%;
         transform: translateY(-10%);
@@ -66,22 +66,23 @@ main {
         line-height: 2.5em;
         right: 1%;
         top: 2%;
-        font-family: $font2;
+        font-family: $font1;
         #serves {
-            font-size: 1.25em;
+            font-size: 1.55em;
             font-weight: 900;
             color: #666;
-            text-decoration: underline;
         }
         #email {
-            font-size: 1.35em;
+            font-size: 1.75em;
             font-weight: 900;
+            
+            color: $brandPurple;
             transform: translate(-1.5%, -30%);
         }
         h2 {
-            font-size: 2.0em;
-            color: $black;
-            transform: translate(-4%, -55%)
+            font-size: 2.5em;
+            color: $brandPurple;
+            transform: translate(-4%, -45%)
         }
         #phone {
             width: 4%;
@@ -141,7 +142,6 @@ main {
         width: 100%;
         justify-content: space-evenly;
 
-        border: $testBorder2;
         img {
             height: 24vw;
             padding-bottom: 10

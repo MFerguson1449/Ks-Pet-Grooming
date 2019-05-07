@@ -20,7 +20,7 @@ main {
   background: #C2B7F3;
 }
 #header #name {
-  height: 170%;
+  height: 120%;
   position: absolute;
   left: 12%;
   transform: translateY(-10%);
@@ -31,23 +31,23 @@ main {
   line-height: 2.5em;
   right: 1%;
   top: 2%;
-  font-family: "Lato", sans-serif;
+  font-family: "Shadows Into Light", cursive;
 }
 #header #header-info #serves {
-  font-size: 1.25em;
+  font-size: 1.55em;
   font-weight: 900;
   color: #666;
-  text-decoration: underline;
 }
 #header #header-info #email {
-  font-size: 1.35em;
+  font-size: 1.75em;
   font-weight: 900;
+  color: #b949f5;
   transform: translate(-1.5%, -30%);
 }
 #header #header-info h2 {
-  font-size: 2em;
-  color: #111;
-  transform: translate(-4%, -55%);
+  font-size: 2.5em;
+  color: #b949f5;
+  transform: translate(-4%, -45%);
 }
 #header #header-info #phone {
   width: 4%;
@@ -101,7 +101,6 @@ main {
   display: flex;
   width: 100%;
   justify-content: space-evenly;
-  border: 5px solid red;
 }
 .home-content #homebody img {
   height: 24vw;
