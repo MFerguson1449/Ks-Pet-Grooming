@@ -3,6 +3,7 @@
   padding: 0px;
   box-sizing: border-box;
   color: #111;
+  font-size: 10px;
 }
 
 body {
@@ -18,56 +19,58 @@ main {
   position: relative;
   height: 21vh;
   background: #C2B7F3;
+  border-bottom: 2px solid #111;
 }
 #header #name {
-  height: 120%;
+  height: 165%;
   position: absolute;
-  left: 12%;
-  transform: translateY(-10%);
+  left: 15%;
+  transform: translateY(-20%);
 }
 #header #header-info {
   position: absolute;
   text-align: right;
   line-height: 2.5em;
   right: 1%;
-  top: 2%;
-  font-family: "Shadows Into Light", cursive;
+  top: 3%;
+  font-family: "Lato", sans-serif;
+  margin-right: 20vh;
 }
 #header #header-info #serves {
-  font-size: 1.55em;
+  font-size: 2.1rem;
   font-weight: 900;
-  color: #666;
+  color: #444;
 }
 #header #header-info #email {
-  font-size: 1.75em;
+  font-size: 2.7rem;
   font-weight: 900;
-  color: #b949f5;
-  transform: translate(-1.5%, -30%);
+  color: #111;
+  transform: translate(0%, 5%);
 }
-#header #header-info h2 {
-  font-size: 2.5em;
-  color: #b949f5;
-  transform: translate(-4%, -45%);
+#header #header-info #phoneNumber {
+  font-size: 3.5rem;
+  color: #111;
+  transform: translate(0%, 40%);
 }
 #header #header-info #phone {
   width: 4%;
   position: absolute;
-  top: 25%;
-  left: 61%;
+  top: 28%;
+  left: 62%;
 }
 #header #header-info #facebook {
   width: 30%;
-  transform: translate(-8%, -25%);
+  transform: translate(10%, 0%);
 }
 
 .nav-list {
-  width: 50%;
+  width: 40%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
   position: absolute;
-  left: 30%;
-  top: 70%;
+  left: 32%;
+  top: 85%;
 }
 .nav-list li {
   position: relative;
@@ -76,11 +79,11 @@ main {
 }
 
 .nav-links {
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Lato", sans-serif;
   text-decoration: none;
   color: #111;
   font-weight: 900;
-  font-size: 46px;
+  font-size: 3rem;
 }
 
 .home,
@@ -107,8 +110,8 @@ main {
   padding-bottom: 10;
 }
 .home-content #homebody p {
-  font-family: "Lato", sans-serif;
-  font-size: 2.4vmin;
+  font-family: "Source Sans Pro", sans-serif;
+  font-size: 2.2rem;
   font-weight: 900;
   line-height: 1.3em;
   width: 31%;
@@ -118,7 +121,7 @@ main {
   position: relative;
   height: 95%;
   font-family: "Lato", sans-serif;
-  font-size: 1.5em;
+  font-size: 3rem;
   font-weight: 900;
   display: flex;
 }
@@ -160,32 +163,28 @@ main {
 
 #lower-page {
   height: 15vh;
+  border-top: 2px solid #111;
   background: #A8EEED;
 }
 #lower-page #book {
   position: absolute;
   bottom: 4%;
   left: 3%;
+  height: 8%;
 }
 
 #copyright {
   position: absolute;
-  font-size: 1.5vh;
+  font-size: 1.5rem;
   right: 42%;
   bottom: 1%;
-  font-family: "Shadows Into Light", cursive;
+  font-family: "Lato", sans-serif;
   color: #111;
   font-weight: 600;
 }
 
 a:hover {
   color: #b949f5;
-}
-
-a:active {
-  background-color: #3e8e41;
-  box-shadow: 0 5px #666;
-  transform: translateY(4px);
 }
 
 /*# sourceMappingURL=/style.e0c02e61.css.map */
